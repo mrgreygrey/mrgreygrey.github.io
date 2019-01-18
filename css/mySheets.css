@@ -32,9 +32,11 @@
 
 body{
  font-family: Arial;
- background-image: url(../images/puppy.jpg);
- height: 100%;
- width: 100%;
+ background-image: url(../images/Nokdu.jpg);
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-color: #C0C0C0;
 }
 
 nav{
