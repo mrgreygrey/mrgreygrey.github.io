@@ -1,0 +1,71 @@
+.bannerButton{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 3vw;
+    width: 20%;
+    display: inline-block; 
+    text-align: center;
+}
+
+.bannerButton:hover{
+    color: steelblue;
+}
+
+header{
+    top: 0;
+    padding-top: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.siteBody{
+    background: steelblue;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+#homeImages{
+    display: block;
+    border: 3px solid darkslateblue;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#homeImages:hover{
+    cursor: pointer;
+}
+
+.copyrightFooter{
+    bottom: 0px;
+    text-align: right;
+}
+
+.logo{
+    float: left;
+    margin-left: 10px;
+}
+
+#contactForm{
+width: 30%;
+margin: auto;
+display: block;
+}
+
+.infoArea{
+    margin-top: 10px;
+}
+
+
+#submitButton{
+    background: none;
+    border: none;
+    
+}
+
+
+#submitButton:hover{
+    color: aliceblue;
+}
