@@ -36,7 +36,3 @@ function changeImage(){
         imageSelector++;
     }
 }
-
-function thankyouAlert(){
-    alert("Thanks for your submission");
-}

@@ -17,26 +17,32 @@
             </div>
         </header>
         <div class="siteBody">
-            <h1 style="text-align: center">Contact Us</h1>
-            <form action="post" id="contactForm">
+            <p class="sectionName">Contact Us</p>
+            <form action="post" id="contactForm" onsubmit="alert('Thanks for your submission')">
                 
-                <label for="nameInput">Name</label>
-                <input type="text" name="Name" id="nameInput" class="inforArea" required><br>
+                <div>
+                    <label for="nameInput">Name</label>
+                    <input type="text" name="Name" id="nameInput" class="inforArea" required><br>
+                </div>
                 
-                <label for="emailInput">Email</label>
-                <input type="email" name="Email" id="emailInput" class="infoArea" required><br>
-               
-                <label for="infoTextArea">Info</label>
-                <textarea name="Info" class="infoArea" cols="45" rows="5" required></textarea>
-                <input type="submit" id="submitButton" onsubmit="thankyouAlert()">
+                <div>
+                    <label for="emailInput">Email</label>
+                    <input type="email" name="Email" id="emailInput" class="infoArea" required><br>
+                </div>
+                <div>
+                    <label for="textArea">Info</label>
+                    <textarea name="Info" id="textArea" class="infoArea" cols="45" rows="5" required></textarea>
+                </div>
+              
+                <input type="submit" id="submitButton">
             </form>
+            <footer class="copyrightFooter">
+                <p>
+                    <strong>
+                            Copyright 2019 - All Rights Reserved
+                    </strong>
+                </p>
+            </footer>
         </div>
-        <footer class="copyrightFooter">
-            <p>
-                <strong>
-                        Copyright 2019 - All Rights Reserved
-                </strong>
-            </p>
-        </footer>
     </body>
 </html>

@@ -30,8 +30,14 @@ header{
 .siteBody{
     background: steelblue;
     padding-top: 50px;
-    padding-bottom: 50px;
     box-sizing: border-box;
+    position: relative;
+    min-height: 90vh;
+    
+}
+
+#pictureCaption{
+    text-align: center;
 }
 
 #homeImages{
@@ -55,7 +61,8 @@ header{
 
 footer{
     bottom: 0;
-    position: fixed;
+    position: absolute;
+    height: 2.5rem;
     width: 98%;
     background: white;
     padding-top: 5px;
@@ -70,20 +77,31 @@ footer{
 }
 
 #contactForm{
-    width: 30%;
-    margin: auto;
-    display: block;
+    margin-top: 5%;
+    margin-left: 30%;
+}
+
+#textArea{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+label{
+    display: inline-block;
+    width: 140px;
+    text-align: right;
 }
 
 .infoArea{
     margin-top: 10px;
 }
 
-
 #submitButton{
     background: none;
     border: none;
-    width: 190%;
+    position: absolute;
+    margin-left: 35.4%;
+    font-weight: bold;
 }
 
 
@@ -101,17 +119,25 @@ footer{
     float: left;
     margin-top: 20px;
     margin-left: 10px;
-    margin-right: 10px; 
+    margin-right: 10px;
+    border: 3px solid darkslateblue; 
 }
 
 .sectionName{
     margin: 5px;
     padding-top: 0;
     text-align: center;
-    font-size: 2vw;
+    font-size: 3vw;
     font-weight: bold;
 }
 
 .serviceInformation{
+    margin-left: 100px;
+    margin-top: 50px;
     font-size: 2vw;
+    text-align: left;
+}
+
+footer:hover{
+    opacity: 0;
 }
