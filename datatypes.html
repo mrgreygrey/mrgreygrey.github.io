@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <title>Data Types</title>
+</head>
+
+<body>
+    <header class="banner">
+        <div id="myDynamicNav" class="dynamicNav">
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+            <a href="index.html" id="dynamicHome">
+                <h1>Home</h1>
+            </a>
+            <h1>Basics</h1>
+            <a href="history.html">History</a>
+            <a href="newproject.html">New Project</a>
+            <a href="datatypes.html">Data types</a>
+            <a href="ifelse.html">If Else</a>
+            <a href="strings.html">Strings</a>
+            <a href="loops.html">Loops</a>
+            <a href="io.html">I/O</a>
+            <a href="scope.html">Scope</a>
+            <a href="classes.html">Classes</a>
+            <a href="inheritance.html">Inheritance</a>
+            <a href="mvvm.html">MVVM</a>
+            <h1>Misc</h1>
+            <a href="resources.html">Resources</a>
+            <a href="about.html">About</a>
+            <a href="join.html">Join</a>
+        </div>
+        <span span style="cursor:pointer" onclick="openNav()" class="mobileNav">&#9776;</span>
+        <a href="index.html">CodingBasics(with C#)</a>
+    </header>
+    <div class="siteBody">
+        <nav class="sideNav">
+            <h1>Basics</h1>
+            <a href="history.html">History</a>
+            <a href="newproject.html">New Project</a>
+            <a href="datatypes.html">Data types</a>
+            <a href="ifelse.html">If Else</a>
+            <a href="strings.html">Strings</a>
+            <a href="loops.html">Loops</a>
+            <a href="io.html">I/O</a>
+            <a href="scope.html">Scope</a>
+            <a href="classes.html">Classes</a>
+            <a href="inheritance.html">Inheritance</a>
+            <a href="mvvm.html">MVVM</a>
+            <h1>Misc</h1>
+            <a href="resources.html">Resources</a>
+            <a href="about.html">About</a>
+            <a href="join.html">Join</a>
+        </nav>
+        <div class="content">
+            <h1 class="contentHeader">What is a data type?</h1>
+            <img src="images/DataTypes.jpg" alt="data types examples" class="exampleImages">
+            <p>
+                Data type is an attribute we assign to data so that the compiler knows what to do with it.
+                Knowing the different data types is critical to your ability to write good code. While
+                not all languages force you to do so, assigning type to data is important in the C#
+                language.
+            </p>
+            <p>
+                C# is what is known as a stronly typed language, which means that every time a variable is
+                declared the type must be assigned to it. The most common types you will declare are:
+            </p>
+            <table class="types">
+                <th>Type</th>
+                <th>Declaration</th>
+                <th>Description</th>
+                <tr>
+                    <td>Integer</td>
+                    <td>int</td>
+                    <td>A 32 bit integer that ranges from-2,147,483,648 to 2,147,483,647</td>
+                </tr>
+                <tr>
+                    <td>Double</td>
+                    <td>double</td>
+                    <td>A 64 bit number with a floating decimal point that ranges from (+/-)5.0 x 10-324 to (+/-)1.7
+                        x 10308</td>
+                </tr>
+                <tr>
+                    <td>Boolean</td>
+                    <td>Boolean</td>
+                    <td>A data type that is simply true or false</td>
+                </tr>
+                <tr>
+                    <td>Char</td>
+                    <td>char</td>
+                    <td>A single alpha-numeric character</td>
+                </tr>
+                <tr>
+                    <td>String</td>
+                    <td>String</td>
+                    <td>the most common object; a string is any string of characters</td>
+                </tr>
+            </table>
+            <p>
+                This is only a small number of the data types available to you. However, most other
+                data types you will deal with are variations of these five. Some are larger some are
+                smaller and as you learn more about how programming works you will know which one is
+                best for any number of situations.
+            </p>
+            <div class="review">
+                <p>
+                    What data type deals with true and false statements?
+                </p>
+                <input type="text" id="booleanAnswer">
+                <button type="button" onclick="testBoolean()">Submit</button>
+                <label for="booleanAnswer" id="booleanResult"></label>
+                <p>
+                    If i wanted to create a number with the value of '2.14' what is the best data type?
+                </p>
+                <input type="text" name="double" id="doubleAnswer">
+                <button type="button" onclick="testDouble()">Submit</button>
+                <label for="doubleAnswer" id="doubleResult"></label>
+            </div>
+            <div class="navRef">
+                <a href="newproject.html">Back</a>
+                <a href="ifelse.html">Next</a>
+            </div>
+        </div>
+        <div>
+</body>
+
+</html>

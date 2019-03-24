@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <title>I/O</title>
+</head>
+
+<body>
+    <header class="banner">
+        <div id="myDynamicNav" class="dynamicNav">
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+            <a href="index.html" id="dynamicHome">
+                <h1>Home</h1>
+            </a>
+            <h1>Basics</h1>
+            <a href="history.html">History</a>
+            <a href="newproject.html">New Project</a>
+            <a href="datatypes.html">Data types</a>
+            <a href="ifelse.html">If Else</a>
+            <a href="strings.html">Strings</a>
+            <a href="loops.html">Loops</a>
+            <a href="io.html">I/O</a>
+            <a href="scope.html">Scope</a>
+            <a href="classes.html">Classes</a>
+            <a href="inheritance.html">Inheritance</a>
+            <a href="mvvm.html">MVVM</a>
+            <h1>Misc</h1>
+            <a href="resources.html">Resources</a>
+            <a href="about.html">About</a>
+            <a href="join.html">Join</a>
+        </div>
+        <span span style="cursor:pointer" onclick="openNav()" class="mobileNav">&#9776;</span>
+        <a href="index.html">CodingBasics(with C#)</a>
+    </header>
+    <div class="siteBody">
+        <nav class="sideNav">
+            <h1>Basics</h1>
+            <a href="history.html">History</a>
+            <a href="newproject.html">New Project</a>
+            <a href="datatypes.html">Data types</a>
+            <a href="ifelse.html">If Else</a>
+            <a href="strings.html">Strings</a>
+            <a href="loops.html">Loops</a>
+            <a href="io.html">I/O</a>
+            <a href="scope.html">Scope</a>
+            <a href="classes.html">Classes</a>
+            <a href="inheritance.html">Inheritance</a>
+            <a href="mvvm.html">MVVM</a>
+            <h1>Misc</h1>
+            <a href="resources.html">Resources</a>
+            <a href="about.html">About</a>
+            <a href="join.html">Join</a>
+        </nav>
+        <div class="content">
+            <h1 class="contentHeader">IO? Like the Moon?</h1>
+            <img src="images/io.jpg" alt="io" class="exampleImages" title="Wow, mind your own business">
+            <p>
+                Haha no no I/O not Io. I/O is short for input/output. It is one
+                of the most critical function that computers perform. Without it
+                they are effectively useless. It how information is passed and
+                the "information" part of information technology.
+            </p>
+            <h3>Cool let's do it!</h3>
+            <p>
+                Lucky for us we can easily read and write to a console with our
+                two primary commands: <br>
+                Cosole.WriteLine() which is used for the program to the console. <br>
+                Console.ReadLine() which will read what the user types into the
+                console.
+            </p>
+            <p>
+                If you look at the above example the program will write a request
+                to the user to enter their age. Then the program will wait for
+                the user to enter their age and assign it to a string. Finally it
+                will write to the console the age the user input. It is important
+                to note that the program shown above does not do any sort of
+                verification to ensure that the users input is actually a number
+                this is obviously a terrible practice because the user could
+                have put "potato" and the program would have wrote "you are
+                potato years old". That is less than ideal. Remember whenever you
+                right code to validate all data so that these things don't happen.
+            </p>
+            <h3>Thats it?</h3>
+            <p>
+                For reading and writing to console it really is that easy! However
+                These methods are far more robust than that. Console.Read() can
+                actually take a file as a parameter and read the file which you can
+                then manipulate however you want.
+            </p>
+            <div class="navRef">
+                <a href="loops.html">Back</a>
+                <a href="scope.html">Next</a>
+            </div>
+        </div>
+        <div>
+</body>
+
+</html>

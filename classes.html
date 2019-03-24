@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <title>Classes and Methods</title>
+</head>
+
+<body>
+    <header class="banner">
+        <div id="myDynamicNav" class="dynamicNav">
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+            <a href="index.html" id="dynamicHome">
+                <h1>Home</h1>
+            </a>
+            <h1>Basics</h1>
+            <a href="history.html">History</a>
+            <a href="newproject.html">New Project</a>
+            <a href="datatypes.html">Data types</a>
+            <a href="ifelse.html">If Else</a>
+            <a href="strings.html">Strings</a>
+            <a href="loops.html">Loops</a>
+            <a href="io.html">I/O</a>
+            <a href="scope.html">Scope</a>
+            <a href="classes.html">Classes</a>
+            <a href="inheritance.html">inheritance</a>
+            <a href="mvvm.html">MVVM</a>
+            <h1>Misc</h1>
+            <a href="resources.html">Resources</a>
+            <a href="about.html">About</a>
+            <a href="join.html">Join</a>
+        </div>
+        <span span style="cursor:pointer" onclick="openNav()" class="mobileNav">&#9776;</span>
+        <a href="index.html">CodingBasics(with C#)</a>
+    </header>
+    <div class="siteBody">
+        <nav class="sideNav">
+            <h1>Basics</h1>
+            <a href="history.html">History</a>
+            <a href="newproject.html">New Project</a>
+            <a href="datatypes.html">Data types</a>
+            <a href="ifelse.html">If Else</a>
+            <a href="strings.html">Strings</a>
+            <a href="loops.html">Loops</a>
+            <a href="io.html">I/O</a>
+            <a href="scope.html">Scope</a>
+            <a href="classes.html">Classes</a>
+            <a href="inheritance.html">inheritance</a>
+            <a href="mvvm.html">MVVM</a>
+            <h1>Misc</h1>
+            <a href="resources.html">Resources</a>
+            <a href="about.html">About</a>
+            <a href="join.html">Join</a>
+        </nav>
+        <div class="content">
+            <h1 class="contentHeader">What is a Class?</h1>
+            <p>
+                So by now you may be wondering what on earth a class is. And it
+                is a very important question to ask. In object oriented programming
+                classes are critical to the creation of objects.
+            </p>
+            <p>
+                The easiest way to think of classes is as a blueprint. In the same way
+                an architect designs a blueprint for a house and then is able to use
+                that same blueprint over and over again to create new houses, a class
+                can be designed once and then we can create as many objects as we want
+                from it.
+            </p>
+            <p>
+                Classes contain two very important things: the data that an object needs,
+                and the methods that it will use. For instance, a class for a person would
+                almost certainly contain a name, age, weight and possibly also have areas
+                for things like hair colour or a telephone number. But it would also possibly
+                have methods for running or talking or any number of things that person object
+                may be required to do.
+            </p>
+            <h1>What is a method?</h1>
+            This leads us to a very critical piece of information. What is a method? A method is
+            any action an object may be required to perform to fulfill its desired task. Two of
+            the most common methods you will use are Console.WriteLine() and Console.Read().
+            They are used to read and write information to the console. As you can see we write
+            "Console" before each method, that's because both WriteLine() and Read() are methods
+            that belong to the Console class.
+
+            <h3>What's with the brackets?</h3>
+            <p>
+                The brackets at the end of a method are where parameters go. Parameters are required
+                data that the method uses to perform it's stated function. Going back to
+                Console.WriteLine() when used in practice it actually requires a String. If you look
+                In some of the examples in which the method is used, there is always a bunch of text
+                in between quotation marks. This is a string being created specifically for the method
+                which it will then take and write to the console!
+            </p>
+            <p>
+                We often put Hello World as the example, mostly out of tradition but you can write
+                whatever you want. You can also take a string object you created somewhere else and
+                put it in the parameter list. Try it out!
+            </p>
+            <div class="navRef">
+                <a href="scope.html">Back</a>
+                <a href="inheritance.html">Next</a>
+            </div>
+        </div>
+        <div>
+</body>
+
+</html>

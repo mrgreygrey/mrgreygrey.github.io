@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <title>Scope and Main Method</title>
+</head>
+
+<body>
+    <header class="banner">
+        <div id="myDynamicNav" class="dynamicNav">
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+            <a href="index.html" id="dynamicHome">
+                <h1>Home</h1>
+            </a>
+            <h1>Basics</h1>
+            <a href="history.html">History</a>
+            <a href="newproject.html">New Project</a>
+            <a href="datatypes.html">Data types</a>
+            <a href="ifelse.html">If Else</a>
+            <a href="strings.html">Strings</a>
+            <a href="loops.html">Loops</a>
+            <a href="io.html">I/O</a>
+            <a href="scope.html">Scope</a>
+            <a href="classes.html">Classes</a>
+            <a href="inheritance.html">inheritance</a>
+            <a href="mvvm.html">MVVM</a>
+            <h1>Misc</h1>
+            <a href="resources.html">Resources</a>
+            <a href="about.html">About</a>
+            <a href="join.html">Join</a>
+        </div>
+        <span span style="cursor:pointer" onclick="openNav()" class="mobileNav">&#9776;</span>
+        <a href="index.html">CodingBasics(with C#)</a>
+    </header>
+    <div class="siteBody">
+        <nav class="sideNav">
+            <h1>Basics</h1>
+            <a href="history.html">History</a>
+            <a href="newproject.html">New Project</a>
+            <a href="datatypes.html">Data types</a>
+            <a href="ifelse.html">If Else</a>
+            <a href="strings.html">Strings</a>
+            <a href="loops.html">Loops</a>
+            <a href="io.html">I/O</a>
+            <a href="scope.html">Scope</a>
+            <a href="classes.html">Classes</a>
+            <a href="inheritance.html">inheritance</a>
+            <a href="mvvm.html">MVVM</a>
+            <h1>Misc</h1>
+            <a href="resources.html">Resources</a>
+            <a href="about.html">About</a>
+            <a href="join.html">Join</a>
+        </nav>
+        <div class="content">
+            <h1 class="contentHeader">What is scope?</h1>
+            <img src="images/Scope.jpg" alt="Scope" class="exampleImages">
+            <p>
+                Scope is what determines which data can be seen by what part of the program.
+                This is determined mainly by two things within the C# language: visibility
+                declaration and curly braces.
+            </p>
+            <h3>Access Modifiers</h3>
+            <p>
+                Access Modifiers are something you will see all the time when you start writing code.
+                They are used to tell the compiler what data can be seen where. It is important that
+                we don't allow data to be seen by any part of the program that doesn't doesn't have
+                and inherent need to see it. the four main access modifiers you will deal with are:
+            </p>
+            <table class="types">
+                <th>Name</th>
+                <th>Description</th>
+                <tr>
+                    <td>Public</td>
+                    <td>Can be accessed by any part of the program</td>
+                </tr>
+                <tr>
+                    <td>Private</td>
+                    <td>Can only be accessed by the class it is in</td>
+                </tr>
+                <tr>
+                    <td>Protected</td>
+                    <td>Can only be accessed by this class or a class derived from it</td>
+                </tr>
+                <tr>
+                    <td>Internal</td>
+                    <td>Can be accessed by any member in the same assembly</td>
+                </tr>
+            </table>
+            <h3>Curly Braces { }</h3>
+            <p>
+                Curly braces are how we determine where a body of code starts and finishes. This
+                includes but is not limited to classes, methods and arrays. So when we create a class
+                or write a method all code that belongs to it must be between those curly braces.
+            </p>
+            <h1>Main Method</h1>
+            <p>
+                What is the main method? Well simply put it is the point of entry for
+                the program. When a program is executed this is where it starts. The syntax
+                for the main method is different from language to language but in C# it looks
+                like this:
+            </p>
+            <p>
+                public static void main(String[] args){
+                <br>
+                }
+            </p>
+            <div class="navRef">
+                <a href="io.html">Back</a>
+                <a href="classes.html">Next</a>
+            </div>
+        </div>
+        <div>
+</body>

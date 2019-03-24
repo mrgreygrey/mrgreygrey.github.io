@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <title>Strings</title>
+</head>
+
+<body>
+    <header class="banner">
+        <div id="myDynamicNav" class="dynamicNav">
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+            <a href="index.html" id="dynamicHome">
+                <h1>Home</h1>
+            </a>
+            <h1>Basics</h1>
+            <a href="history.html">History</a>
+            <a href="newproject.html">New Project</a>
+            <a href="datatypes.html">Data types</a>
+            <a href="ifelse.html">If Else</a>
+            <a href="strings.html">Strings</a>
+            <a href="loops.html">Loops</a>
+            <a href="io.html">I/O</a>
+            <a href="scope.html">Scope</a>
+            <a href="classes.html">Classes</a>
+            <a href="inheritance.html">Inheritance</a>
+            <a href="mvvm.html">MVVM</a>
+            <h1>Misc</h1>
+            <a href="resources.html">Resources</a>
+            <a href="about.html">About</a>
+            <a href="join.html">Join</a>
+        </div>
+        <span span style="cursor:pointer" onclick="openNav()" class="mobileNav">&#9776;</span>
+        <a href="index.html">CodingBasics(with C#)</a>
+    </header>
+    <div class="siteBody">
+        <nav class="sideNav">
+            <h1>Basics</h1>
+            <a href="history.html">History</a>
+            <a href="newproject.html">New Project</a>
+            <a href="datatypes.html">Data types</a>
+            <a href="ifelse.html">If Else</a>
+            <a href="strings.html">Strings</a>
+            <a href="loops.html">Loops</a>
+            <a href="io.html">I/O</a>
+            <a href="scope.html">Scope</a>
+            <a href="classes.html">Classes</a>
+            <a href="inheritance.html">Inheritance</a>
+            <a href="mvvm.html">MVVM</a>
+            <h1>Misc</h1>
+            <a href="resources.html">Resources</a>
+            <a href="about.html">About</a>
+            <a href="join.html">Join</a>
+        </nav>
+        <div class="content">
+            <h1 class="contentHeader">Strings man, how do they work?</h1>
+            <img src="images/strings.jpg" alt="strings" class="exampleImages">
+            <p>
+                Ahh, the venerable string. Whethe you are using an object-
+                oriented language, procedural or functional you will need
+                to learn about strings. They are ubiquitous and often
+                critical in the reading and creation of data.
+            </p>
+            <p>
+                A string is at it's most basic just a string of characters
+                chained together. The exciting part is how they can be
+                manipulated. Here are a couple of common string methods and
+                what they do.
+            </p>
+            <table class="types">
+                <th>method</th>
+                <th>purpose</th>
+                <tr>
+                    <td>ToLower()</td>
+                    <td>makes all characters in the string lowercase</td>
+                </tr>
+                <tr>
+                    <td>ToUpper()</td>
+                    <td>makes all characters in the string uppercase</td>
+                </tr>
+                <tr>
+                    <td>Split(char[])</td>
+                    <td>Splits the strings into smaller strings based on what character is in the parameters</td>
+                </tr>
+            </table>
+            <h3>Concatenation</h3>
+            <p>
+                Concatenation is the combining of two strings together. It sounds
+                tricky but the good news it is easy peasy. To concatenate strings
+                all you need to do is put a "+" sign in between them. like if I
+                were to write:
+            </p>
+            <p>
+                "I'm" + " awesome"
+            </p>
+            <p>
+                and print it out, it would print "I'm awesome".
+            </p>
+            <h3>Formatting</h3>
+            <p>
+                You probably noticed the string in the pictured example had a bunch
+                of curly braces with numbers in them. Don't let that scare you,
+                those are effectively just placeholders that you will replace with
+                data. In the above examples the placeholders get replaced with the
+                data for age, weightInKgs, and heightInCm.
+            </p>
+            <div class="review">
+                <p>
+                    what is the symbol we use for Concatenation?
+                </p>
+                <select name="plusAnswer" id="plusAnswer">
+                    <option value="-">-</option>
+                    <option value="+">+</option>
+                    <option value="%">%</option>
+                    <option value="@">@</option>
+                </select>
+                <button type="button" onclick="testPlus()">Submit</button>
+                <label for="plusAnswer" id="plusResult"></label>
+            </div>
+            <div class="navRef">
+                <a href="ifelse.html">Back</a>
+                <a href="loops.html">Next</a>
+            </div>
+        </div>
+        <div>
+</body>
+
+</html>
