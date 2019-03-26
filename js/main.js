@@ -59,7 +59,7 @@ function testPlus(){
 }
 
 function openNav(){
-    document.getElementById("myDynamicNav").style.width = "40vw";
+    document.getElementById("myDynamicNav").style.width = "45vw";
 }
 
 function closeNav(){
