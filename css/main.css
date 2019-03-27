@@ -40,6 +40,10 @@
     padding-left: 10px;
 }
 
+.sideNav h2{
+    color: lightblue;
+}
+
 .sideNav a{
     text-decoration: none;
     width: 80%;
@@ -83,6 +87,7 @@
 .logos{
     width: auto;
     float: left;
+    margin-right: 10px;
 }
 
 content hr{
@@ -160,8 +165,12 @@ content hr{
     padding-left: 425px;
 }
 
+/*
+    This next batch of css creates properties for a mobile navigation menu. It
+    is made hidden unless a media query determines it is on a mobile browser
+*/
 .dynamicNav{
-    background: #475356;;
+    background: #475356;
     height: 100%;
     width: 0;
     position: fixed;
@@ -182,14 +191,14 @@ content hr{
 
 .dynamicNav h1{
     font-size: 20pt;
+    margin-left: 3vw;
 }
 
-.sideNav .closeBtn{
+.closeBtn{
     position: absolute;
+    right: 0;
     top: 0;
-    text-align: right;
     font-size: 36px;
-    margin-left: 50px;
 }
 
 .mobileNav{
@@ -199,6 +208,15 @@ content hr{
     color: aliceblue;
 }
 
+#thanksJoining{
+    color: lightsalmon;
+    text-align: center;
+}
+
+/*
+    Will hide the static navigation menu, adjust some of the content 
+    properties and make the mobile navigation menu visible
+*/
 @media only screen and (max-width: 600px){
     .sideNav{
         display: none;
@@ -234,9 +252,5 @@ content hr{
         padding-top: 0;
         padding-left: 0;
         padding-bottom: 0;
-    }
-
-    #dynamicNav a{
-        font-size: 5vw;
     }
 }

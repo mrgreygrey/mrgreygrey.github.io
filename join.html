@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBuIT0iBJCf3zxPcfYRmT6Bj06JDah0iXA",
+        authDomain: "finalexamdb-730e0.firebaseapp.com",
+        databaseURL: "https://finalexamdb-730e0.firebaseio.com",
+        projectId: "finalexamdb-730e0",
+        storageBucket: "",
+        messagingSenderId: "903992233316"
+    };
+    firebase.initializeApp(config);
+    </script>
     <title>Join Us</title>
 </head>
 
@@ -31,12 +45,12 @@
             <a href="about.html">About</a>
             <a href="join.html">Join</a>
         </div>
-        <span span style="cursor:pointer" onclick="openNav()" class="mobileNav">&#9776;</span>
+        <span style="cursor:pointer" onclick="openNav()" class="mobileNav">&#9776;</span>
         <a href="index.html">CodingBasics(with C#)</a>
     </header>
     <div class="siteBody">
         <nav class="sideNav">
-            <h1>Basics</h1>
+            <h2>Basics</h2>
             <a href="history.html">History</a>
             <a href="newproject.html">New Project</a>
             <a href="datatypes.html">Data types</a>
@@ -48,7 +62,7 @@
             <a href="classes.html">Classes</a>
             <a href="inheritance.html">Inheritance</a>
             <a href="mvvm.html">MVVM</a>
-            <h1>Misc</h1>
+            <h2>Misc</h2>
             <a href="resources.html">Resources</a>
             <a href="about.html">About</a>
             <a href="join.html">Join</a>
@@ -62,11 +76,14 @@
                 more experienced programmers along with other entry level coders
                 like yourself.
             </p>
-            <p>
-                *This is just a dummy form it doesn't submit anywhere :)
+            <p style="color:orangered;">
+                This form submits to a firebase controlled by me. Please don't enter 
+                any sensitive data. :)
             </p>
             <form action="post" id="joinForm">
-
+                <div>
+                    <p id="thanksJoining"></p>
+                </div>
                 <div>
                     <label for="firstName">First Name:</label>
                     <input type="text" name="firstName" id="firstName"> <br>
@@ -89,14 +106,14 @@
                 </div>
                 <div id="recieveCheckbox">
                     <label for="recieveNews">Recieve Newsletter?:</label>
-                    <input type="checkbox" name="recieveNews" id="recieveNews">
+                    <input type="checkbox" name="recieveNews" id="recieveNews" value="true">
                 </div>
                 <div id="submitButton">
-                    <button>Submit</button>
+                    <button type="button" onclick="addData()">Submit</button>
                 </div>
             </form>
         </div>
-        <div>
+    </div>
 </body>
 
 </html>

@@ -33,13 +33,12 @@
             <a href="about.html">About</a>
             <a href="join.html">Join</a>
         </div>
-        <span span style="cursor:pointer" onclick="openNav()" class="mobileNav">&#9776;</span>
+        <span style="cursor:pointer" onclick="openNav()" class="mobileNav">&#9776;</span>
         <a href="index.html">CodingBasics(with C#)</a>
     </header>
-    <div class="siteBody">
         <div class="siteBody">
             <nav class="sideNav">
-                <h1>Basics</h1>
+                <h2>Basics</h2>
                 <a href="history.html">History</a>
                 <a href="newproject.html">New Project</a>
                 <a href="datatypes.html">Data types</a>
@@ -51,7 +50,7 @@
                 <a href="classes.html">Classes</a>
                 <a href="inheritance.html">inheritance</a>
                 <a href="mvvm.html">MVVM</a>
-                <h1>Misc</h1>
+                <h2>Misc</h2>
                 <a href="resources.html">Resources</a>
                 <a href="about.html">About</a>
                 <a href="join.html">Join</a>
@@ -100,12 +99,63 @@
                     a ton of uses. They are incredibly intuitive statements and
                     very easy to learn and master.
                 </p>
+                <h3>How else can I compare?</h3>
+                <p>
+                    Great question! and here is a table I made just incase you 
+                    asked!
+                </p>
+                <table class="types">
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>></td>
+                        <td>Greater than</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;</td>
+                        <td>Less than</td>
+                    </tr>
+                    <tr>
+                        <td>==</td>
+                        <td>Elements have equal values</td>
+                    </tr>
+                    <tr>
+                        <td>>=</td>
+                        <td>Greater than or equal to</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;=</td>
+                        <td>Less than or equal to</td>
+                    </tr>
+                    <tr>
+                        <td>&&</td>
+                        <td>Used to tell the if statement that it is only true if both conditions are met</td>
+                    </tr>
+                    <tr>
+                        <td>||</td>
+                        <td>Used to tell the if statement that it is true if either condition is met</td>
+                    </tr>
+                </table>
+                <p></p>
+                <div class="review">
+                    <p>What symbol is used to check "equal to"?</p>
+                    <select name="equalTo" id="equalToAnswer">
+                        <option value=">=">>=</option>
+                        <option value="||">||</option>
+                        <option value="==">==</option>
+                        <option value="&lt;">&lt;</option>
+                    </select>
+                    <button type="button" onclick="testEqualTo()">Submit</button>
+                    <label for="equalToAnswer" id="equalToResult"></label>
+                </div>
                 <div class="navRef">
                     <a href="datatypes.html">Back</a>
                     <a href="strings.html">Next</a>
                 </div>
             </div>
-            <div>
+        </div>
 </body>
 
 </html>
