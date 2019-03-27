@@ -85,6 +85,7 @@ function closeNav(){
     document.getElementById("myDynamicNav").style.width = "0";
 }
 
+//adds data to firebase
 function addData(){
     var db = firebase.firestore();
 
@@ -94,9 +95,6 @@ function addData(){
     var _DOB = document.getElementById("dateOfBirth").value;
     var _email = document.getElementById("email").value;
     var _recieveNews = document.getElementById("recieveNews").checked;
-
-
-    alert(_recieveNews);
 
     db.collection("joinFormData").add({
         firstName: first_Name,
